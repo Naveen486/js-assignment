@@ -1,0 +1,19 @@
+<html>
+
+    <head>
+        <title>Assignment</title>
+        
+    </head>
+    <body>
+        <p>Date formats</p>
+        <p id=sample></p>
+        <script >
+            var date=new Date();
+            var day=(date.getDate()<10 ? "0"+date.getDate():date.getDate());
+            var month=(date.getMonth()<10 ? "0"+(date.getMonth()+1):date.getMonth()+1);
+            document.getElementById("sample").innerHTML=day+"-"+month+"-"+date.getFullYear()+
+            " , "+day+"/"+month+"/"+date.getFullYear();
+        </script>
+
+    </body>
+</html>
